@@ -12,8 +12,9 @@ function saveUser() {
 
 function userS() {
   const getUser = localStorage.getItem("user");
+  const dataObj = JSON.parse(getUser);
+  console.log(dataObj);
 }
-console.log(userS);
 
 saveUser();
 userS();
